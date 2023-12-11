@@ -1,0 +1,17 @@
+ Here is a brief recap
+• The aim of the control-flow perspective is to extract a model of the sequence of
+activities from the event log. This is done by counting the transitions between
+successive tasks with the same case id.
+• Such transition counts can be stored in a transition matrix, which is the basis for
+generating an output graph.
+• Graphviz is a tool for drawing graphs. It takes care of the layout of nodes and
+edges automatically, so the minimum information required to draw a graph is a
+list of edges between nodes.
+• Graphviz has its own language to define graphs, but there is no need to write such
+definitions by hand. PyGraphviz provides a convenient interface to generate such
+definitions from Python code.
+• Both nodes and edges have attributes that can be used to improve the graph.
+For better visualization, edge thickness can be adjusted according to transition
+counts, and node color can be adjusted according to activity counts.
+• Both transition counts and activity counts can be used to discover the most
+frequent paths (i.e. the typical behavior) in the process.
